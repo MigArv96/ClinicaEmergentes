@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -62,6 +62,12 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_URI', 'mongodb+srv://Admin:Admin123@clusterclinica.vy0kn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
+            'database' => 'myappdb',
+    ],
 
         'pgsql' => [
             'driver' => 'pgsql',
