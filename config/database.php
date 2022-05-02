@@ -66,7 +66,7 @@ return [
         'mongodb' => [
             'driver' => 'mongodb',
             'dsn' => env('DB_URI', 'mongodb+srv://Admin:Admin123@clusterclinica.vy0kn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
-            'database' => 'myappdb',
+            'database' => 'ClinicaEmergentes',
     ],
 
         'pgsql' => [
