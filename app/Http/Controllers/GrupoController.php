@@ -42,7 +42,7 @@ class GrupoController extends Controller
 
     }
     public function edit($id) {
-        $datapacientes = Grupo::find($id);
+        $datagrupo = Grupo::find($id);
         return view('grupo.edit', compact('datagrupo'));
      }
 
