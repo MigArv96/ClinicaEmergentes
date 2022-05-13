@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AntecedentesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PacientesController;
 use App\Http\Controllers\CitaController;
@@ -36,6 +37,11 @@ Route::delete('/pacientes/{id}',[PacientesController::class, 'destroy'])->name('
 //CRUD CITAS
 
 Route::resource('citas', CitaController::class);
+
+// CRUD ANTECEDENTES
+
+Route::get('/antecedentes', [PacientesController::class, 'index'])->name('antecedentes');
+
 
 
 require __DIR__.'/auth.php';
