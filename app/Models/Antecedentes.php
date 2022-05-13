@@ -9,5 +9,5 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class Antecedentes extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'Antecedentes';
+    protected $collection = 'antecedentes';//okcollections
 }

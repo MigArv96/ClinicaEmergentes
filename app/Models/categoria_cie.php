@@ -9,5 +9,5 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class categoria_cie extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'Categoria_Cie';
+    protected $collection = 'categoria_Cies';//okcollections
 }

@@ -9,5 +9,5 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class Cita extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'Cita';
+    protected $collection = 'citas';//okcollections
 }

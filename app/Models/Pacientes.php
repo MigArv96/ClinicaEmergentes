@@ -9,6 +9,6 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class Pacientes extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'Pacientes';
+    protected $collection = 'Pacientes';//okcollections
     protected $fillable = ["nombre", "apellido","edad", "dui", "direccion", "telefono","fNac"];
 }

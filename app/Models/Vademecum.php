@@ -9,5 +9,5 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class Vademecum extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'Vademecum';
+    protected $collection = 'vademecums';//okcollections
 }

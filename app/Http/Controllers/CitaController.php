@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pacientes;
 use App\Models\Cita;
 use Illuminate\Http\Request;
-
+//ok
 class CitaController extends Controller
 {
     /**

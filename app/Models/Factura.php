@@ -9,5 +9,5 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class Factura extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'Factura';
+    protected $collection = 'facturas';//okcollections
 }
