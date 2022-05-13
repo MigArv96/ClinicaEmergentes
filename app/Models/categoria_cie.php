@@ -10,4 +10,5 @@ class categoria_cie extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'categoria_Cies';//okcollections
+    protected $fillable = ["subgrupo", "clave_categoria","descripcion"];
 }

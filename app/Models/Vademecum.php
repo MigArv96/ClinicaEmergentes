@@ -10,4 +10,7 @@ class Vademecum extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'vademecums';//okcollections
+    protected $fillable = ["principio_activo", "accion_terapeutica","indicacion","marca","propiedades",
+    "dosificacion", "precauciones","reacciones_adversas","interacciones","contrainidicaciones","sobredosificacion"
+];
 }

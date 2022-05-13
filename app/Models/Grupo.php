@@ -10,4 +10,5 @@ class Grupo extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'grupos';//okcollections
+    protected $fillable = ["clave_grupo","descripcion_grupo"];
 }

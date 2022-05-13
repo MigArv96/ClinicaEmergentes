@@ -10,4 +10,5 @@ class Receta extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'recetas';//okcollections
+    protected $fillable = ["indicaciones", "insumo","cantidad_recetada","dosis"];
 }

@@ -10,4 +10,5 @@ class Cita extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'citas';//okcollections
+    protected $fillable = ["paciente", "user","fecha_cita"];
 }

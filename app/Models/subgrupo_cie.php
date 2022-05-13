@@ -10,4 +10,5 @@ class subgrupo_cie extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'subgrupo_Cies';//okcollections
+    protected $fillable = ["grupo", "clave_grupo","descripcion_grupo"];
 }

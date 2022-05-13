@@ -10,4 +10,5 @@ class Antecedentes extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'antecedentes';//okcollections
+    protected $fillable = [ "paciente","familiares","personales"];
 }

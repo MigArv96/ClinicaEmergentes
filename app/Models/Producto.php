@@ -10,4 +10,5 @@ class Producto extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'productos';//okcollections
+    protected $fillable = ["nombre", "categoria","presentacion","detalle","precio"];
 }

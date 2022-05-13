@@ -10,4 +10,5 @@ class Diagnostico extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'diagnosticos';//okcollections
+    protected $fillable = ["enfermedad", "descripcion","clave"];
 }

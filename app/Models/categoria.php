@@ -10,4 +10,5 @@ class categoria extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'categorias';//okcollections
+    protected $fillable = ["categoria"];
 }

@@ -10,4 +10,5 @@ class Enfermedad extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'enfermedads';//okcollections
+    protected $fillable = ["nombre_enfermedad", "clave_enfermedad","categoria_cie"];
 }

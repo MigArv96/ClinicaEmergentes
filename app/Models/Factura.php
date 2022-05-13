@@ -10,4 +10,5 @@ class Factura extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'facturas';//okcollections
+    protected $fillable = ["user", "nombre_paciente","fecha_factura","producto"];
 }

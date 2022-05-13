@@ -10,4 +10,6 @@ class Consulta extends Model
 {
     protected $connection = 'mongodb';
     protected $collection = 'consultas';//okcollections
+    protected $fillable = ["user", "paciente","receta", "diagnostico", "fecha_consulta", "observacion","motivo_consulta",
+    "presion_arterial", "frecuencia_cardiaca","frecuencia_respiratoria", "temperatura", "peso", "talla"];
 }
