@@ -24,13 +24,16 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+//CRUD PACIENTES
 
 Route::get('/pacientes', [PacientesController::class, 'index'])->name('pacientes');
 Route::get('/pacientes/create', [PacientesController::class, 'create'])->name('create');
 Route::post('create', [PacientesController::class, 'store'])->name('store');
-Route::get('/pacientes/{id}', [PacientesController::class, 'edit'])->name('edit');
+Route::get('/pacientes/edit/{id}', [PacientesController::class, 'edit'])->name('editar');
 Route::put('/pacientes/{id}', [PacientesController::class, 'update'])->name('update');
 Route::delete('/pacientes/{id}',[PacientesController::class, 'destroy'])->name('destroy');
+
+//CRUD CITAS
 
 Route::resource('citas', CitaController::class);
 
