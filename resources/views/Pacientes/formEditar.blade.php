@@ -3,13 +3,13 @@
     <div class="row">
         <div class="form-group col">
             <label class="col-form-label col-form-label-sm" for="nombre">Nombre</label>
-            <input type="text" name="nombre" class="form-control form-control-sm col-sm-10" id="nombre" placeholder="Nombre">
+            <input type="text" name="nombre" class="form-control form-control-sm col-sm-10" id="nombre" value="{{$paciente->nombre}}">
         </div>
     </div>
     <div class="row">
         <div class="form-group col">
             <label class="col-form-label col-form-label-sm" for="apellido">Apellido</label>
-            <input type="text" name="apellido" class="form-control form-control-sm col-sm-10" id="apellido" placeholder="Apellido">
+            <input type="text" name="apellido" class="form-control form-control-sm col-sm-10" id="apellido" value="{{$paciente->apellido}}">
         </div>
     </div>
     <div class="row">

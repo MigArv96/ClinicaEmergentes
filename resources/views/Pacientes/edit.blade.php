@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header">{{ __('Editar información de paciente') }}</div>
                     <div class="card-body">
-                        <form method="get" action=" {{ route('App/Http/Controllers/PacientesController/id->edit')}}">
+                        <form method="get" action=" {{ route('editar',$paciente->id)}}">
                             @csrf
                             {{ method_field('PUT') }}
                             @include('pacientes.formEditar')

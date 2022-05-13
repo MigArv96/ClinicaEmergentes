@@ -41,15 +41,28 @@ class PacientesController extends Controller
         //return response()->json($dataProducts);
         return redirect('pacientes');
 
+        /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     }
     public function edit($id) {
-        $datapacientes = Pacientes::find($id);
+        $datapacientes = Pacientes::firstOrFail($id);
         return view('pacientes.edit', compact('datapacientes'));
      }
 
+     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function update(Request $request, $id){
 
-        $datapacientes = Pacientes::find($id);
+        $datapacientes = Pacientes::firstOrFail($id);
         $datapacientes->update($request->all());
         $datapacientes->save();
         return redirect('pacientes');

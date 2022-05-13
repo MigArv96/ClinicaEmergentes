@@ -42,7 +42,7 @@
                             <td>{{ $paciente->telefono }}</td>
                             <td>{{ $paciente->fNac }}</td>
                             <td class="d-flex">
-                                <a class="btn btn-success btn-sm mx-1" href="{{url('pacientes/'.$paciente->id.'edit')}}">Editar</a>
+                                <a class="btn btn-success btn-sm mx-1" href="{{route('editar',$paciente->id)}}">Editar</a>
 
                                 <form action="{{ url('pacientes/'.$paciente->id) }}" method="post">
                                     @csrf
